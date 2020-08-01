@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+$font-size-huge: 60px;
+$font-size-large: 24px;
+$font-family-title: 'Roboto', sans-serif;
+$text-color-white: #fff;
+$text-color-black: #000;
+
+.products-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+    h1{
+        text-align: center;
+        font-size: $font-size-huge;
+        text-transform: uppercase;
+        margin-bottom: 10px;            
+        font-weight: 700;
+        color: #000;
+        font-family: $font-family-title;
+        
+    }
+
+        
+    .products{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+$font-family-title: 'Roboto', sans-serif;
+.product-items-container{
+
+        display: flex;
+
+        margin-right: 0;
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+
+        .product-description{   
+            
+            font-size: 18px;
+            font-family: $font-family-title;
+            font-weight: 300;
+            line-height: 1.75rem;
+            min-width: 300 px;
+            width: 60%;
+            padding: 10px;
+
+            p{
+                margin: 10px 0;
+            }
+            h2{
+                font-weight: 400;
+            }
+        }
+    
+
+
+}

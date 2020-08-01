@@ -1,0 +1,33 @@
+
+$font-size-large: 24px;
+$font-family-title: 'Roboto', sans-serif;
+$text-color-white: #fff;
+.footer-container{
+
+    display: flex;
+    background-color: black;
+    color: $text-color-white;
+    width: 100%;
+    font-family: $font-family-title ;
+    height: 80vh;
+    .footer-map{
+
+        width: 60%;
+    }
+    .footer-info{
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+
+        h1{
+
+           font-size: 24px;
+           font-weight: 700;
+           margin-bottom: 20px;
+           
+
+        }
+        width: 20%;
+    }
+    
+}
