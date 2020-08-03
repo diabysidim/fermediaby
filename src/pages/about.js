@@ -9,7 +9,7 @@ import "../styles/about.scss";
 
 export default ()=>{
 
-    const img= require("../image/pigeon.jpg");
+    const img= "/image/pigeon.jpg";
     return (<div>                
                 <Header color="reverse"></Header>
 

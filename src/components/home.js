@@ -9,13 +9,13 @@ import "../styles/home.scss";
 
 
 const Home = ()=>{
-        const img = [ require("../image/Goat1.jpg"), require("../image/Goat2.jpg"), require("../image/poussin1.jpg")]
+        const img = ["/image/Goat1.jpg", "/image/vacheblanche.jpeg",  "/image/Goat2.jpg", "/image/poussin1.jpg"]
 
         return (
 
                 <div>
                     
-                    <div className="section" style={{backgroundImage: `url(${require("../image/pigeon.jpg")})`}}>
+                    <div className="section" style={{backgroundImage: `url(${"/image/vacheblanche.jpeg"})`}}>
                         <Header></Header>
                         <h1>Ferme Diaby</h1>
                         <div className="overlay"></div>                  
@@ -43,7 +43,7 @@ const Home = ()=>{
                             <Image width="250px" height="250px" url={img[1]}></Image> 
                             <Image width="250px" height="250px" url={img[2]}></Image>      
                         </div>
-                        <Link to="/">Voir les photos</Link>
+                        <Link to="/gallery">Voir les photos</Link>
                         
                     </div>
                     <div className="section" style={{backgroundImage: `url(${img[2]})`}}>

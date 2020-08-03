@@ -16,7 +16,7 @@ Labore duis nulla qui eiusmod velit consequat elit fugiat.</p>
 
 export default ()=>{
 
-    const img = [ require("../image/Goat1.jpg"), require("../image/Goat2.jpg"), require("../image/poussin1.jpg")]
+    const img = [ "/image/Goat1.jpg","/image/Goat2.jpg","/image/poussin1.jpg"]
 
     return (<div>
                 <Header color="reverse"></Header>

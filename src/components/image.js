@@ -1,11 +1,11 @@
 import React from "react";
+import path from 'path';
 
 import Img from "../styles/home-gallery.module.scss"
 
 
 export default (props)=>{
         
-        console.log(props);
-        return(<div className={Img.img} style={{width:props.width , height: props.height, backgroundImage:`url(${props.url})`}}> </div>)
+        return(<div className={Img.img} style={{width:props.width , height: props.height, backgroundImage:`url('${path.resolve(props.url)}')`}}> </div>)
 
 }

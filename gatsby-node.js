@@ -1,3 +1,13 @@
+exports.onCreateWebpackConfig = ({ actions }) => {
+    actions.setWebpackConfig({
+      node: {
+        fs: 'empty'
+      }
+    })
+  }
+
+
+
 // const path = require(`path`)
 // const { createFilePath } = require(`gatsby-source-filesystem`)
 

@@ -13,7 +13,7 @@ const Header = (props)=>{
             <ul >
                 <li ><Link to="/about">A propos</Link></li>
                 <li ><Link to="/products">Nos Produits</Link></li>
-                <li ><Link to="/#">Gallerie</Link></li>
+                <li ><Link to="/gallery">Gallerie</Link></li>
                 <li ><Link to="/#">News</Link></li>
                 <li ><Link to="/#">Nous Contacter</Link></li>
 
