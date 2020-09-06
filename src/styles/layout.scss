@@ -1,0 +1,26 @@
+
+@import "./setup.scss";
+
+.layout__container{
+
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    width: 100%;
+    
+}
+
+.layout__main--container{
+
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: relative;   
+}
+
+.layout__main--content{
+
+    position: relative;
+    top: 0;
+
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+$font-size-huge: 50px;
+$font-size-large: 24px;
+$font-family-title: 'Roboto', sans-serif;
+$text-color-white: #fff;
+
+.newsItem{
+
+    margin: 0 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 250px;
+    box-shadow: 1px 1px  1px 1px rgba(0,0,0, 0.2);
+    background-size: cover;
+    background-position: center center;
+
+    font-style: $font-family-title;
+    
+    > a{
+
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: block;
+
+        > div{
+        
+            position: absolute;
+            bottom: 0;
+            background: #fff;
+            opacity: 0.7;
+            width: 100%;
+            padding: 10px;
+            font-family: $font-family-title;
+    
+            h2{
+               font-size: $font-size-large;
+               margin-bottom: 10px;
+                
+            }
+
+        }
+
+    }
+
+    
+}
+
+.h1{
+
+    font-size: $font-size-huge;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: $font-family-title;;
+    font-weight: 700;      
+    z-index: 1; 
+    text-align: center;
+    margin:30px 0;
+    margin-top: 60px;
+}
+
+.newsContainer{
+
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 450px;
+    padding: 0 50px;
+}

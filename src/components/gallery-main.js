@@ -63,7 +63,7 @@ class GalleryMain extends React.Component{
 
         render(){
 
-                let width= this.props.width? this.props.width : "600px";
+                let width= this.props.width? this.props.width : "70%";
                 let height = this.props.height? this.props.height : "500px";
 
 
@@ -72,14 +72,16 @@ class GalleryMain extends React.Component{
 
                         <div className={imgStyle.main} style={ {width: width, height: height,  backgroundImage: `url(${ this.state.currentImage && this.state.currentImage.value})`}}> 
 
-                                <button onClick={this.getImgPrevious} className={imgStyle.horizontal}>Left</button>
-                                <button onClick={this.getImgNext} className={imgStyle.horizontal}>Right</button>
+                                <button onClick={this.getImgPrevious} 
+                                className={imgStyle.horizontal, imgStyle.left}>Left</button>
+                                <button onClick={this.getImgNext} 
+                                className={imgStyle.horizontal, imgStyle.right}>Right</button>
                         </div>
                         <div className={imgStyle.photos}>
                             {this.state.imgArray.map(imgItem=> {
                                 let index = this.state.imgArray.indexOf(imgItem);
                                return <a key={index} style={{cursor:"pointer"}} onClick={(e)=>this.displayImage(index, e)}>
-                                    <DImage width="100px" height="100px" url={imgItem.value}></DImage>
+                                    <DImage width="50px" height="50px" url={imgItem.value}></DImage>
                                 </a>})}
                         </div>
 

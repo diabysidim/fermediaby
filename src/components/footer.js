@@ -8,15 +8,15 @@ const Footer = ()=>{
 
     return(
 
-        <div className="footer-container">
+        <div className="footer--container">
 
-            <FooterItem h="Location" p="tomikorobougou, Bamako"></FooterItem>
-            <div className="footer-map">
+            <FooterItem h="Nous Contacter" p={["ranchnandyoulimata@gmail.com", "Diago, Mali"]}></FooterItem>
+            <div className="footer--map">
                 <iframe style={{width:"100%", height:"100%", frameborder:"0"}}
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAIukEJrvgHpdhGRXYLCa0WokpvEYpdNuY&q=Bamako,+Mali" allowfullscreen>
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAIukEJrvgHpdhGRXYLCa0WokpvEYpdNuY&q=Diago,+Mali" allowfullscreen>
                 </iframe>
             </div>
-            <FooterItem  h="Hour" p="Sous rendez-vous"></FooterItem>
+            <FooterItem  h="Heures" p={["Sous rendez-vous"]}></FooterItem>
         
         </div>
     )

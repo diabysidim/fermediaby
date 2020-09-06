@@ -1,0 +1,39 @@
+
+@import "setup.scss";
+
+.news-element__container{
+
+    padding-top: 60px;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $font-family-title;
+    
+
+    >*{
+
+        padding: 10px 10px;
+    }
+
+    div p{
+
+        margin:5px;
+        line-height: 1.5em;
+    }
+
+    h1{
+
+        font-size: $font-size-large;
+        font-weight: 700;
+       
+    }
+
+    h2{
+        font-size: $font-size-medium;
+        font-style: italic;
+    }
+}

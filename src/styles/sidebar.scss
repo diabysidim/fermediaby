@@ -1,0 +1,63 @@
+@import "./setup.scss";
+
+.layout__sidebar{
+
+    padding: 30px;
+    width:250px;
+    height: 100%;
+    right: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transition: all 0.3s;
+    background-color: black;
+
+    font-family: $font-family-title;
+
+    .layout__sidebar--content{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+
+        h1{
+            margin:10px;
+            font-size: 30px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        p{
+            
+           position: fixed;
+           bottom: 50px;
+           color: white;
+        }
+
+        .sidebar--content__ul{    
+
+            li{
+                color: white;
+                margin: auto;
+                margin: 5px;
+                margin-top: 10px;
+                list-style: none;
+                text-transform: none;
+                font-size: 18px;
+                a{
+                    text-decoration:none;
+                    color: white;
+                }
+                a:hover, a:active{
+        
+                    color: gray;
+                }
+                
+            }
+        }
+    }
+}

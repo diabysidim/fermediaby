@@ -1,22 +1,42 @@
 import  React from  "react";
 import GalleryMain from "../components/gallery-main";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Layout from "../components/layout";
 import imgStyle from "../styles/home-gallery.module.scss";
+import { useStaticQuery } from "gatsby";
 
 
 
 export default ()=>{
 
+
+
+    const data= useStaticQuery(
+        graphql`query{
+            allContentfulGalleryPhoto{
+                edges{
+                  node{
+                    photo{
+                              
+                      file{
+                        url
+                      }
+                    }
+                  }
+                }
+              }
+        }` )
+
+    const imgArray = data.allContentfulGalleryPhoto.edges.map( edge=>{
+            
+        return edge.node.photo.file.url
+    }
+
+
+    )
+
     
-    const imgArray= ["/image/belier.jpeg","/image/enclos1.jpeg","/image/Goat1.jpg","/image/Goat1.jpg", "/image/Goat2.jpg" , "/image/poussin1.jpg", "/image/hangard.jpeg", "/image/mur.jpeg", "/image/enclos3.jpeg", "/image/mur2.jpeg"]
-   return <div>
-                <Header color="reverse"></Header>
+    return (<Layout color="reverse">  
                 <h1 className={imgStyle.h1}>Gallerie</h1>
                 <GalleryMain imageUrl={imgArray}></GalleryMain>
-               <Footer></Footer>
-
-
-    
-        </div>
+             </Layout>)
 }

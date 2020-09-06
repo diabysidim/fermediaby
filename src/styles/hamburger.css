@@ -1,0 +1,58 @@
+.hamburger-icon-container {
+    position: relative;
+
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    min-width: 30px;
+    min-height: 30px;
+}
+.hamburger-icon {
+  transform: translateY(-50%); /* center centerpoint of icon-element in container*/
+}
+.hamburger-icon,
+.hamburger-icon:before,
+.hamburger-icon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #FFF;
+    transition: all .2s ease;
+    
+}
+
+.reverse2,
+.reverse2:before,
+.reverse2:after{
+
+    background:black;
+}
+
+.hamburger-icon {
+    top: 50%
+}
+
+.hamburger-icon:before {
+    top: -200%
+}
+
+.hamburger-icon:after {
+    top: 200%
+}
+
+/* Darstellung wenn das Close-Icon angezeigt werden soll */
+
+.hamburger-active .hamburger-icon {
+    transform: rotate(45deg) translate(-3px,-3px); /* translate to raise cross to optically centered position*/
+}
+
+.hamburger-active .hamburger-icon:before,
+.hamburger-active .hamburger-icon:after {
+    top: 0
+}
+
+.hamburger-active .hamburger-icon:before {
+    transform: rotate(90deg)
+}

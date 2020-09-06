@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
-$font-size-huge: 82px;
+$font-size-huge: 50px;
 $font-size-large: 24px;
 $font-family-title: 'Roboto', sans-serif;
 $text-color-white: #fff;
@@ -20,6 +20,7 @@ $text-color-white: #fff;
     justify-content: center;
     align-items: center;
     width: 100%;
+  
 
 }
 
@@ -30,6 +31,8 @@ $text-color-white: #fff;
     background-size: cover;
     display: flex;
     justify-content: space-between;
+    position: relative;
+
    
 }
 
@@ -53,20 +56,67 @@ $text-color-white: #fff;
     z-index: 1; 
     text-align: center;
     margin:30px 0;
+    margin-top: 60px;
+    
 }
   
   
   .horizontal {
     
+    
+  }
+
+  .left{
+
+    position: absolute;
+    top: 50%;
+    left: -27.5px;
+    transform: translate(0,-50%);
     cursor: pointer;
+
     
    
-      position: relative;
       background-color: black;
         color: white;
      border: 1px solid black;
-     height: 25px;
-     width: 75px;
+     height: 50px;
+     width: 50px;
+     border-radius: 100%;
+  
+    
+   
+    
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+    &:active{
+        border: 1px solid black;
+        outline: none;
+        
+    }
+    &:focus{
+        outline: none;
+         
+     }
+  }
+
+  .right{
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: -27.5px;
+    cursor: pointer;
+    
+   
+      background-color: black;
+        color: white;
+     border: 1px solid black;
+     height: 50px;
+     width: 50px;
+     border-radius: 100%;
   
     
    

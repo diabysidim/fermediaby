@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/reset.scss";
+import Layout from "../components/layout";
 
 import Home from "../components/home";
 
@@ -7,7 +8,11 @@ import Home from "../components/home";
 export default () => {
 
 
-  return ( <Home></Home>)
+  return ( 
+    <Layout>
+      <Home></Home>
+    </Layout>
+    )
 }
 
 
