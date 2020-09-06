@@ -16,7 +16,7 @@ const Footer = ()=>{
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAIukEJrvgHpdhGRXYLCa0WokpvEYpdNuY&q=Diago,+Mali" allowfullscreen>
                 </iframe>
             </div>
-            <FooterItem  h="Heures" p={["Sous rendez-vous"]}></FooterItem>
+            <FooterItem  h="Heures" p={["Sur rendez-vous"]}></FooterItem>
         
         </div>
     )
